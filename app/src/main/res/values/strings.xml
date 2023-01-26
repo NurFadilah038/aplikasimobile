@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Padigreen</string>
+    <string name="choose">Pilih Buah Bahan</string>
+    <string name="name">Nama Buah :</string>
+    <string name="kal">Kalori :</string>
+    <string name="price">Harga :</string>
+    <string name="detail">Detail Data Buah</string>
+    <string name="strip"> - </string>
+
+    //Headings
+    <string name="heading_one">SELAMAT DATANG DI PGR</string>
+    <string name="heading_two">FASILITAS LENGKAP</string>
+    <string name="heading_three">EASY REPORT</string>
+    <string name="heading_fourth">Pay Anywhere</string>
+
+    //Description
+    <string name="desc_one">Terbayangkah oleh anda sebuah kosan yang nyaman ? PGR hadir disini untuk anda</string>
+    <string name="desc_two">Resort ini juga memiliki fasilitas yang baik, membuat Padi Resort menjadi pilihan para penghuni kosan</string>
+    <string name="desc_three">Resort yang memudahkan para penghuni kosan</string>
+    <string name="desc_fourth">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+</resources>

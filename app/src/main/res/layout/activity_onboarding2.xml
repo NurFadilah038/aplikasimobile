@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C9EF63"
+    tools:context=".onboarding2">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="450px"
+        android:background="@drawable/kamar1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="355px"
+        android:fontFamily="@font/ubuntubold"
+        android:text="FASILITAS "
+        android:textColor="@color/black"
+        android:textSize="120px">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bondieoutline"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="60px"
+        android:textColor="@color/black"
+        android:textSize="170px"
+        android:text="KAMAR LENGKAP">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="950px"
+        android:layout_height="3dp"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="60px"
+        android:background="@drawable/line" />
+    <TextView
+        android:layout_width="950px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:fontFamily="@font/montserratmedium"
+        android:layout_marginLeft="60px"
+        android:textColor="@color/black"
+        android:textSize="30px"
+        android:text="Terdapat kamar tidur, meja, kursi, lemari, rak dinding, exhouse fan, westafel, dan wc dalam kamar">
+
+    </TextView>
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53px"
+        android:layout_marginLeft="300dp"
+        android:background="@drawable/skip"
+        android:fontFamily="@font/montserratmedium"
+        android:padding="20px"
+        android:textSize="40px"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Skip"/>
+
+</LinearLayout>

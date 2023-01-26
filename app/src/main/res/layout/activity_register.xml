@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <ImageView
+        android:layout_width="1100px"
+        android:layout_height="270dp"
+        android:layout_marginLeft="130px"
+        android:layout_marginTop="100px"
+        android:src="@drawable/adventure"></ImageView>
+
+    <TextView
+        android:layout_width="600px"
+        android:layout_height="100px"
+        android:layout_marginTop="480px"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/montserratsemibold"
+        android:textSize="90px"
+        android:text="Get Started">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="580px"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/montserratsemibold"
+        android:layout_gravity="center_horizontal"
+        android:textSize="34px"
+        android:text="by Creating a free account">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_nama"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="700px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="#e0e0de"
+            android:fontFamily="@font/montserratregular"
+            android:hint="Username"
+            android:paddingLeft="10dp">
+        </EditText>
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="#e0e0de"
+            android:fontFamily="@font/montserratregular"
+            android:hint="Email"
+            android:paddingLeft="10dp">
+        </EditText>
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="#e0e0de"
+            android:fontFamily="@font/montserratregular"
+            android:hint="password"
+            android:paddingLeft="10dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_rpt_pass"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="#e0e0de"
+            android:fontFamily="@font/montserratregular"
+            android:hint="Repeat Password"
+            android:paddingLeft="10dp"></EditText>
+
+        <CheckBox android:id="@+id/checkbox_meat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115px"
+            android:textSize="30px"
+            android:text="by checking the box you agree to our terms and condition"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTER" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already a member ?"
+                android:layout_gravity="center_horizontal"
+                android:autoLink="web"
+                android:layout_centerInParent="true"
+                android:linksClickable="true"/>
+            <TextView
+                android:id="@+id/tv_login_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Login"
+                android:layout_gravity="center_horizontal"
+                android:autoLink="web"
+                android:layout_centerInParent="true"
+                android:linksClickable="true"
+                android:textColor="@color/yellow"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="forgot password?"
+            android:layout_gravity="center_horizontal"
+            android:autoLink="web"
+            android:textColor="@color/yellow"
+            android:layout_centerInParent="true"
+            android:linksClickable="true"/>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

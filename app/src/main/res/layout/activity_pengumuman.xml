@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pengumuman">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratbold"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:shadowColor="@color/gray"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="0.01"
+                android:text="PENGUMUMAN"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/pengumuman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:fontFamily="@font/montserratmedium"
+                android:layout_marginLeft="5dp"
+                android:hint="Kamar"
+                android:text="PENGUMUMAN"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

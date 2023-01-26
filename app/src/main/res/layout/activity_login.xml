@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="1100px"
+        android:layout_height="270dp"
+        android:layout_marginLeft="130px"
+        android:layout_marginTop="100px"
+        android:src="@drawable/adventure"></ImageView>
+    <TextView
+        android:layout_width="600px"
+        android:layout_height="100px"
+        android:layout_marginTop="480px"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/montserratsemibold"
+        android:textSize="70px"
+        android:text="Welcome Back"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="580px"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/montserratsemibold"
+        android:layout_gravity="center_horizontal"
+        android:textSize="34px"
+        android:text="sign in to access your account">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_nama"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="700px"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="#e3e6e4"
+            android:fontFamily="@font/montserratregular"
+            android:hint="Username"
+            android:paddingLeft="10dp"></EditText>
+
+
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="#e3e6e4"
+            android:fontFamily="@font/montserratregular"
+            android:hint="Password"
+            android:paddingLeft="10dp"></EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80px"
+                android:text=" Remember me"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="300px"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="forgot password ?"
+                android:textColor="@color/yellow"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="275dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="New member ?" />
+
+            <TextView
+                android:id="@+id/btn_registernow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text=" Register now"
+                android:textColor="@color/yellow"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whites"
+    android:orientation="vertical"
+    tools:context=".dashboard">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginVertical="30px"
+                android:layout_gravity="center"
+                android:id="@+id/idIVGambar"
+                android:background="#c1c1c1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="HALO, "
+                        android:textColor="@color/navy"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/nama_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserratmedium"
+                        android:text=""
+                        android:hint="Nama Pengguna"
+                        android:textColor="@color/navy"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="Kamar "
+                        android:textColor="@color/navy"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/TVKamar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserratmedium"
+                        android:hint="No. Kamar"
+                        android:text="101"
+                        android:textColor="@color/navy"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CVReport"
+            android:layout_width="340dp"
+            android:layout_height="160dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="Lapor\nPenghuni"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/bg_circle_radius"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_arrow"
+                    app:tint="@color/black" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/inimi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/color_transparant"
+                android:backgroundTint="@android:color/holo_green_light"/>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratbold"
+            android:layout_marginLeft="5dp"
+            android:hint="Kamar"
+            android:text="PENGUMUMAN"
+            android:textColor="@color/gray"
+            android:textSize="12dp" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CVPengumuman"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+            <TextView
+                android:id="@+id/pengumuman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:fontFamily="@font/montserratmedium"
+                android:layout_marginLeft="5dp"
+                android:hint="Kamar"
+                android:text="PENGUMUMAN"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratbold"
+            android:layout_marginLeft="5dp"
+            android:hint="Kamar"
+            android:text="Deposit dan Sewa"
+            android:textColor="@color/gray"
+            android:textSize="12dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvPemadam"
+                android:layout_width="175dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratbold"
+                        android:gravity="center"
+                        android:paddingVertical="10dp"
+                        android:shadowColor="@color/gray"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="0.01"
+                        android:text="JUMLAH\nDEPOSIT"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/deposit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserratmedium"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:text="Rp.10.1000"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvPemada"
+                android:layout_width="175dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserratbold"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:shadowColor="@color/gray"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="0.01"
+                        android:text="SISA HARI\nSEWA"/>
+                    <TextView
+                        android:id="@+id/sewa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserratmedium"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:text="236 hari"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPemadam1"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/dashboard"
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/ic_dashboard" />
+
+            <ImageView
+                android:id="@+id/laporan"
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/ic_laporan" />
+
+            <ImageView
+                android:id="@+id/fasilitas"
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/ic_fasilitas" />
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/ic_profil" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
